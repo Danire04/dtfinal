@@ -10,11 +10,11 @@ import time
 # CONFIGURACIÓN
 # =======================
 
-GOOGLE_API_KEY = "AIzaSyDPPtTRxxW0761kzPHoREiuv8i0keoc4lY"
-MONGODB_URI = "mongodb+srv://jctovarg_db_user:UP2025@pccluster.sh0ibym.mongodb.net/"
-COHERE_API_KEY = "cqEqbrHoqtyrgxCEPiJoEdB9dECChdDKg9RHerCA"
+GOOGLE_API_KEY = "AIzaSyALGDTQ1_k391nwp8g4lvDkbnpexyR2Lzc"
+MONGODB_URI = "mongodb+srv://ditorrest_db_user:4ImSgQa8GeToFt2h@dtclusterfinal.wwary6i.mongodb.net/"
+COHERE_API_KEY = "dvse2zvefjmkvAvfGJg7ko76nmArHE2xCJNGxj7z"
 
-USER = "Juan Carlos Tovar Galarreta"
+USER = "Daniela Irene Torres Torres"
 
 if not GOOGLE_API_KEY or not MONGODB_URI:
     st.error("❌ Faltan las variables de entorno GOOGLE_API_KEY o MONGODB_URI")
@@ -191,3 +191,4 @@ for msg in st.session_state.historial:
         st.chat_message("user").write(msg["texto"])
     else:
         st.chat_message("assistant").write(msg["texto"])
+
